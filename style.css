@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: #ccc;
+}
+.chatbox {
+  width: 400px;
+  min-width: 390px;
+  height: 598px;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 0 3px #ccc;
+  border-radius: 10px;
+}
+.chatlogs {
+  width: 100%;
+  height: 240px;
+  background: rgb(253, 139, 8);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.chatbot-name {
+  color: white;
+  padding: 20px 0 0 50px;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+.chat-message {
+  color: white;
+  padding: 0 0 0 50px;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.wave {
+  width: 25px;
+  height: 18px;
+  transform: rotate(25deg);
+}
+.chat-message-subject {
+  color: white;
+  padding: 0 0 20px 50px;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.chat-message-text {
+  height: 400px;
+  margin: 15px;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgb(240, 239, 239);
+}
+.robot-face {
+  margin-top: -49px;
+  margin-bottom: 40px;
+  height: 20px;
+}
+i.fas {
+  display: inline-block;
+  border-radius: 70px;
+  height: 58px;
+  width: 58px;
+  color: white;
+  padding: 1.2em 1.2em;
+  background-color: rgb(251, 152, 38);
+}
+i.fa {
+  display: inline-block;
+  border-radius: 70px;
+  font-size: 8px;
+  color: rgb(253, 139, 8);
+  padding: 1.2em 1.2em;
+  background-color: rgb(246, 246, 246);
+}
+.one,
+.two,
+.third,
+.fourth {
+  height: 50px;
+  margin: 12px 0 5px 0;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0 0 1px rgb(227, 227, 227);
+}
+.faq {
+  font-size: 14px;
+  padding-left: 5px;
+  font-weight: 550;
+  font-family: Tahoma, sans-serif;
+}
+.fa-question {
+  font-size: 16px;
+  border: 10px;
+  color: orangered;
+  padding-left: 8px;
+}
+.ques-subject {
+  font-size: 12px;
+  font-weight: 400;
+}
+.dot {
+    height: 11px;
+    width: 11px;
+    background-color: rgb(251, 152, 38);
+    border-radius: 50%;
+    border: 2px solid rgb(227, 227, 227);
+    display: inline-block;
+}
+.convo-button {
+  padding: 15px 10px 0 70px;
+  height: 30px;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 550px;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 42px;
+}
+.text-msg{
+    width:20px;
+    height:20px;
+}
+.button {
+  border-radius: 30px;
+  height: 40px;
+  border-color: rgb(224, 221, 221);
+  width: 240px;
+  background-color: white;
+  font-size: 14px;
+}
+.buttontext{
+    font-size: 12px;
+    font-weight: 600;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.fade-in.chatlogs {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.fade-in.chat {
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+}
+.fade-in.robot-face {
+    -webkit-animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;
+    animation-delay: 2.7s;
+  }
+.fade-in.chat-message-text {
+    -webkit-animation-delay: 3.7s;
+  -moz-animation-delay: 3.7s;
+  animation-delay: 3.7s;
+  }
+.fade-in.one {
+    -webkit-animation-delay: 5.7s;
+    -moz-animation-delay:    5.7s;
+    animation-delay:         5.7s;
+}
+.fade-in.two {
+    -webkit-animation-delay: 7.7s;
+    -moz-animation-delay:    7.7s;
+    animation-delay:         7.7s;
+  }
+.fade-in.third {
+    -webkit-animation-delay: 9.7s;
+    -moz-animation-delay:    9.7s;
+    animation-delay:         9.7s;
+}
+.fade-in.fourth {
+    -webkit-animation-delay: 11.7s;
+    -moz-animation-delay: 11.7s;
+    animation-delay: 11.7s;
+}
+.fade-in.center {
+    -webkit-animation-delay: 13.7s;
+    -moz-animation-delay: 13.7s;
+    animation-delay: 13.7s;
+}
+
+@media only screen and (max-width:575px){
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 552px;
+        left: 100px;
+        transform: translate(-50%, -50%);
+        height:20px;
+        width:42px;
+    }
+
+}
